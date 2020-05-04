@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vishal K. | Web & UI Designer</title>
+    <meta
+      name="description"
+      content="I’m a Web Designer from Delhi, helping companies deliver beautiful, intuitive online experiences through solid research, thoughtful design and accessible code."
+    />
+    <meta
+      name="keywords"
+      content="Web designer, UI designer, Delhi, Bangalore, Leh, Freelance designer, Contract designer, Brochure Designer, Business Card Designer, Branding, front-end developer"
+    />
+    <meta name="author" content="Vishal Katral" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div><a href="#" class="logo-text">Vishal K.</a></div>
+        <div>
+          <nav class="menu">
+            menu
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <div
+          class="carousel"
+          data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": 3000, "pauseAutoPlayOnHover": true, "prevNextButtons": false, "freeScroll": false, "fade": true, "selectedAttraction": 0.01,
+          "friction": 0.15, "freeScrollFriction": 0.03 }'
+        >
+          <div class="carousel-cell msd-bg" data-relative-input="true">
+            <div class="slider-box" id="">
+              <div class="slider-box__title" data-depth="3">
+                <h1 class="primary-heading msd-slider-primary-heading">
+                  i design
+                </h1>
+                <h2 class="primary-sub-heading msd-slider-sub-heading">
+                  mobile apps
+                </h2>
+              </div>
+              <div class="slider-box__image" data-depth="1">
+                <img
+                  class="slider-msd"
+                  src="images/phone_2.png"
+                  alt="My Senior Doctor (Mobile
+              App)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell edspera-bg" data-relative-input="true">
+            <div class="slider-box" id="">
+              <div class="slider-box__title--edspera" data-depth="3">
+                <h1 class="primary-heading edspera-slider-primary-heading">
+                  design <br />
+                  develop
+                </h1>
+                <h2 class="primary-sub-heading edspera-slider-sub-heading">
+                  websites
+                </h2>
+              </div>
+              <div class="slider-box__image" data-depth="1">
+                <img
+                  class="slider-edspera"
+                  src="images/website_design.png"
+                  alt="Homepage Design for Edspera"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell mcrice-bg" data-relative-input="true">
+            <div class="slider-box" id="">
+              <div class="slider-box__title" data-depth="3">
+                <h1 class="primary-heading mcrice-slider-primary-heading">
+                  design
+                </h1>
+                <h2 class="primary-sub-heading mcrice-slider-sub-heading">
+                  merchandise
+                </h2>
+              </div>
+              <div class="slider-box__image" data-depth="1">
+                <img
+                  class="slider-mcrice"
+                  src="images/tshirt_mockup2.png"
+                  alt="Abhudaya Tshirt Design"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div> -->
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__lhs">
+          <a href="#" class="btn-primary">Let's work together.</a>
+          <p class="copyrights">Copyrights All rights reserved</p>
+        </div>
+        <div class="footer__rhs">
+          <a
+            href="https://github.com/vishalkatral"
+            target="_blank"
+            class="socialmedia"
+            ><img
+              src="images/icon_github.png"
+              alt="Check my github"
+              class="socialmedia__github"
+          /></a>
+          <a
+            href="https://www.behance.net/katralvish84ad"
+            target="_blank"
+            class="socialmedia"
+            ><img
+              src="images/icon_behance.png"
+              alt="Follow me on behance"
+              class="socialmedia__behance"
+          /></a>
+          <a
+            href="linkedin.com/in/vishal-k-020bb5170"
+            target="_blank"
+            class="socialmedia"
+            ><img
+              src="images/icon_linkedin.png"
+              alt="Follow me on Linkedin"
+              class="socialmedia__linkedin"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <script>
+      gsap.from(".header", { opacity: 0, duration: 0.5, y: -50 });
+      gsap.from(".menu", { opacity: 0, duration: 0.5, y: -50 });
+      gsap.from(".slider-box__title", { opacity: 0, duration: 0.5, x: 50 });
+      gsap.from(".primary-heading", { opacity: 0, duration: 0.5, y: -50 });
+      gsap.from(".primary-sub-heading", { opacity: 0, duration: 0.5, y: 50 });
+      gsap.from(".slider-box__image", { opacity: 0, duration: 0.5, x: -50 });
+      gsap.from(".btn-primary", { opacity: 0, duration: 0.5, y: 50 });
+      gsap.from(".copyrights", { opacity: 0, duration: 0.5, x: -50 });
+      gsap.from(".footer__rhs", { opacity: 0, duration: 0.5, y: 50 });
+    </script>
+  </body>
+</html>
