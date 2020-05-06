@@ -253,21 +253,27 @@ body {
   counter-increment: carousel-cell;
 }
 .slider-box {
-  width: 700px;
+  width: 500px;
   height: 500px;
   display: flex !important;
   align-items: center;
   justify-content: center;
   // border: 2px solid red;
+  border-radius: 50%;
+  background-color: transparent;
   position: relative;
   text-align: center;
+
+  &__alphabets {
+   bopr
+  }
 
   &__title {
     position: absolute;
     left: 20px;
     z-index: 1;
     overflow: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     text-align: left;
@@ -277,6 +283,7 @@ body {
       left: -25px;
       z-index: 1;
       overflow: hidden;
+      display: none;
     }
   }
   &__image {
@@ -285,6 +292,10 @@ body {
     padding: 50px;
     perspective: 400px;
   }
+}
+
+.grey-bg {
+  background-color: #eeecec;
 }
 .slider-msd {
   width: 200px;

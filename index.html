@@ -34,11 +34,22 @@
       <div class="container">
         <div
           class="carousel"
-          data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": 3000, "pauseAutoPlayOnHover": true, "prevNextButtons": false, "freeScroll": false, "fade": true, "selectedAttraction": 0.01,
+          data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": false, "pauseAutoPlayOnHover": true, "prevNextButtons": false, "freeScroll": false, "fade": true, "selectedAttraction": 0.01,
           "friction": 0.15, "freeScrollFriction": 0.03 }'
         >
-          <div class="carousel-cell msd-bg" data-relative-input="true">
-            <div class="slider-box" id="">
+          <div class="carousel-cell" data-relative-input="true">
+            <div class="slider-box grey-bg" id="">
+              <div class="slider-box__alphabets">
+                <span class="slider-box__alphabets--m">m</span>
+                <span class="slider-box__alphabets--m">o</span>
+                <span class="slider-box__alphabets--m">b</span>
+                <span class="slider-box__alphabets--m">i</span>
+                <span class="slider-box__alphabets--m">l</span>
+                <span class="slider-box__alphabets--m">e</span>
+                <span class="slider-box__alphabets--m">a</span>
+                <span class="slider-box__alphabets--m">p</span>
+                <span class="slider-box__alphabets--m">p</span>
+              </div>
               <div class="slider-box__title" data-depth="3">
                 <h1 class="primary-heading msd-slider-primary-heading">
                   i design
@@ -57,8 +68,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell edspera-bg" data-relative-input="true">
-            <div class="slider-box" id="">
+          <div class="carousel-cell" data-relative-input="true">
+            <div class="slider-box grey-bg" id="">
               <div class="slider-box__title--edspera" data-depth="3">
                 <h1 class="primary-heading edspera-slider-primary-heading">
                   design <br />
@@ -77,8 +88,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-cell mcrice-bg" data-relative-input="true">
-            <div class="slider-box" id="">
+          <div class="carousel-cell" data-relative-input="true">
+            <div class="slider-box grey-bg" id="">
               <div class="slider-box__title" data-depth="3">
                 <h1 class="primary-heading mcrice-slider-primary-heading">
                   design
@@ -148,10 +159,15 @@
     <script>
       gsap.from(".header", { opacity: 0, duration: 0.5, y: -50 });
       gsap.from(".menu", { opacity: 0, duration: 0.5, y: -50 });
-      gsap.from(".slider-box__title", { opacity: 0, duration: 0.5, x: 50 });
-      gsap.from(".primary-heading", { opacity: 0, duration: 0.5, y: -50 });
-      gsap.from(".primary-sub-heading", { opacity: 0, duration: 0.5, y: 50 });
-      gsap.from(".slider-box__image", { opacity: 0, duration: 0.5, x: -50 });
+      gsap.from(".slider-box__title", { opacity: 0, duration: 0.5, x: -1050 });
+      gsap.from(".primary-heading", { opacity: 0, duration: 1, y: -50 });
+      gsap.from(".primary-sub-heading", { opacity: 0, duration: 1, y: 50 });
+      // gsap.from(".slider-box__image", { opacity: 0, duration: 0.5, x: -50 });
+      gsap.from(".slider-box__image", {
+        opacity: 0,
+        duration: 0.5,
+        x: 1500,
+      });
       gsap.from(".btn-primary", { opacity: 0, duration: 0.5, y: 50 });
       gsap.from(".copyrights", { opacity: 0, duration: 0.5, x: -50 });
       gsap.from(".footer__rhs", { opacity: 0, duration: 0.5, y: 50 });
